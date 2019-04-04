@@ -1,0 +1,24 @@
+{
+  "name": "guildmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start-server": "nodemon ./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcoulsy/GuildManager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcoulsy/GuildManager/issues"
+  },
+  "homepage": "https://github.com/kcoulsy/GuildManager#readme"
+}
