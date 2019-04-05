@@ -10,6 +10,8 @@ const app = express();
 
 app.use(bodyParser.json());
 
+app.use(require('./routes/routes'));
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
