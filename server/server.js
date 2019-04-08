@@ -1,6 +1,6 @@
 // Updating env variables
 require('./config/config');
-
+const { mongooose } = require('./db/mongoose');
 const express = require('express');
 const bodyParser = require('body-parser');
 
