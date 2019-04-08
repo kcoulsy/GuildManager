@@ -24,7 +24,18 @@ exports.update = (req, res) => {
         if (!response) {
             res.status(404).send();
         }
-        console.log(response);
+        res.send(response);
+    }).catch(e => {
+        res.send('Could not Find Player');
+    })
+};
+
+exports.delete = (req, res) => {
+    const {_id} = req.body
+    Player.findOneAndDelete({_id}).then((response)=> {
+        if (!response) {
+            res.status(404).send();
+        }
         res.send(response);
     }).catch(e => {
         res.send('Could not Find Player');

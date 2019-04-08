@@ -8,6 +8,6 @@ const Player = require('./Player');
 router.get('/player', Player.find);
 router.post('/player', Player.create);
 router.patch('/player', Player.update);
-// router.delete('/player');
+router.delete('/player', Player.delete);
 
 module.exports = router;
