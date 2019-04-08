@@ -5,9 +5,9 @@ const router = express.Router();
 const Player = require('./Player');
 
 // Users routes
-// router.get('/player', Player);
+router.get('/player', Player.find);
 router.post('/player', Player.create);
-// router.patch('/player');
+router.patch('/player', Player.update);
 // router.delete('/player');
 
 module.exports = router;
